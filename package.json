@@ -1,0 +1,17 @@
+{
+  "name": "@scrypta/compiler",
+  "version": "1.0.0",
+  "description": "Scrypta Smart Contracts compiler",
+  "private": false,
+  "main": "src/index.js",
+  "scripts": {
+    "pub": "npm publish --access public"
+  },
+  "author": "Scrypta Task Force",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
