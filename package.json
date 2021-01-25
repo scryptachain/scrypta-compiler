@@ -1,6 +1,6 @@
 {
   "name": "@scrypta/compiler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Scrypta Smart Contracts compiler",
   "private": false,
   "main": "src/index.js",

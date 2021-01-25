@@ -1,9 +1,9 @@
-/* Compiler v0.0.1 */
+/* Compiler v0.0.2 */
 
-async function compiler(code, request = '', local = false) {
+async function compiler(code, request = '', local = false, address) {
     return new Promise(response => {
         let compiled = `const ScryptaCore = require('@scrypta/core'); const db = require('db'); const axios = require('axios');`
-        compiled += `const scrypta = new ScryptaCore; scrypta.staticnodes = true;`
+        compiled += `const scrypta = new ScryptaCore; scrypta.staticnodes = true; const contract = ` + address + `;`
         if (local === true) {
             compiled += `scrypta.mainnetIdaNodes = ['http://localhost:3001']; scrypta.testnetIdaNodes = ['http://localhost:3001'];`
         }
